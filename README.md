@@ -31,40 +31,31 @@
    下载地址：<https://www.python.org/downloads/>
 
 2. 安装依赖（在项目目录下）：
-
-```bash
-pip install -r requirements.txt
+   pip install -r requirements.txt
  
 ##使用方法
 在项目目录下执行：
-
-bash
-python ssq.py
+   python ssq.py
 
 默认会：
 
-从官网接口抓取最近 2000 期双色球开奖数据
+   从官网接口抓取最近 2000 期双色球开奖数据
 
-导出到：
+   导出到：
 
-ssq_history.xlsx
-ssq_history.csv
+  ssq_history.xlsx
+  ssq_history.csv
 
 常用参数
 指定抓取期数（例如 500 期）：
 
-bash
-复制代码
 python ssq.py -n 500
 修改导出文件名：
 
-bash
-复制代码
 python ssq.py -n 1000 --excel my_ssq.xlsx --csv my_ssq.csv
+
 只导出 CSV，不导出 Excel：
 
-bash
-复制代码
 python ssq.py --excel "" --csv ssq_only.csv
 
 声明
